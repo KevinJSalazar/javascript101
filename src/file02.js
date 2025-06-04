@@ -41,12 +41,12 @@ const frameworks = [
  */
 
 // Itera el arreglo frameworks
-for (const framework of frameworks) {
+for (let framework of frameworks) {
   // Divide la cadena en partes usando el separador "|"
-  const [frameworkName, releaseDate, usersName, popularityPercentage] = framework.split("|").map(value => value.trim());
+  let [frameworkName, releaseDate, usersName, popularityPercentage] = framework.split("|").map(value => value.trim());
 
   // Crea el objeto frameworkObj
-  const frameworkObj = {
+  let frameworkObj = {
     frameworkName,
     releaseDate,
     usersName,
